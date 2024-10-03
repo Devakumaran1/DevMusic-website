@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif ;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(15, 5, 65);
+    padding:15px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100; /* this line always header comes first z-index*/
+}
+.logo{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.logo-color{
+    color: rgb(222, 57, 85);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+.menu-toggle{
+    cursor: pointer;
+    display: none;
+}
+.menu{
+    height: 30px;
+    width: 35px;
+    fill: rgb(222, 57, 85);
+}
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right; 
+    background-color: rgb(15, 5, 65);
+    z-index: 2;  
+}
+.nav-items span{ 
+    cursor: pointer;
+    font-size: 18px;
+}
+.nav-items span:hover{ 
+    color: #fff;
+}
+
+ul{
+    display: inline-block;
+}
+li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;   
+}
+.red-color{
+    color:  rgb(222, 57, 85);
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+li a:hover{
+    transition: 0.3s ease;
+    color: rgb(222, 57, 85);
+}
+
+/* home section */
+.home-section{
+    width: 90%;
+    margin: 0 auto 70px;
+    padding: 10px;
+    padding-top: 100px;
+    
+}
+.home-section .row{
+    display: flex;
+    align-items: center;
+}
+ span{
+    color: rgb(222, 57, 85);  
+}
+.col-left h1{
+    font-size: 3.7rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.col-left p{
+    text-align: left;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.btn{
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+ .btn-red{
+    background-color: rgb(215, 70, 94); 
+}
+.btn-blue{
+    background-color: rgb(21, 9, 85) ;
+}
+.buttons .btn-red:hover{
+    border: 1px solid rgb(215, 70, 94);
+    background-color: #fff;
+    color:rgb(222, 57, 85);
+}
+.buttons .btn-blue:hover{
+    border: 1px solid rgb(21, 9, 85);
+    background-color: #fff;
+    color:rgb(21, 9, 85);
+}
+.col-right img{
+    width: 90%;
+}
+/* second section */
+.section-two{
+    width: 100%;
+    padding: 30px 10px;
+    padding-bottom: 50px;
+    margin: 10px auto 50px;
+    background-color: rgb(15, 5, 65);
+    color: #fff;
+}
+.section-two .row{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+}
+
+.two-col-left{
+    font-size: 1.7rem;
+    width: 80%;
+    flex-basis: 50%;
+    padding: 10px 20px;  
+}
+.two-col-right{
+    font-size: 18px;
+    flex-basis: 80%;
+    padding: 10px;
+    line-height: 26px;
+}
+.two-col-right .btn{
+    margin-top: 20px;
+}
+/* section three */
+.section-three{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.section-three h2{
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin: 30px 10px;
+}
+.section-three .row{
+    display: flex;
+    gap: 20px;
+}
+.three-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #aaa;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    z-index: 0; /* through the header part apply z-index:100 */
+
+}
+.three-col:hover{
+    transform: translateY(-15px);
+    z-index: 10; /*using z-index=10 this time no overflow on the header */
+}
+
+.three-col img{
+    width: 30%;
+    padding: 5px;
+}
+.three-col h4{
+    margin: 10px 0;
+    font-size: 22px;
+}
+.three-col p{
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+/* section four */
+.section-four{
+    width: 85%;
+    margin: auto;
+}
+.four-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.four-content h1{
+    flex-basis: 60%;
+    font-size: 3rem;
+    margin: 10px 30px 10px 0px;
+}
+.four-content p{
+    flex-basis: 60%;
+    font-size: 20px;
+    text-align: justify;
+}
+/*  */
+.four-img-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+figure img{
+    width: 80%;
+    margin: 30px;
+}
+figcaption{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* 5th section */
+.section-five{
+    width: 100%;
+    background: rgb(15, 5, 65);
+    color: #fff;
+    margin-bottom: 100px;
+}
+.section-five .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+.five-col-left{
+    flex-basis: 60%;
+    padding: 10px;
+    
+}
+.five-col-left h2{
+    font-size: 2.8rem;
+}
+.five-col-left span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.five-col-left p{
+    margin: 10px 0;
+    text-align: justify;
+}
+.five-col-right{
+    flex-basis: 50%;
+}
+.one-list{
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 2px 3px 20px #aaa;
+}
+
+.five-col-right .five-list{
+    display: block;
+    color: #fff;
+}
+.five-col-right h4{
+    margin: 15px;
+    font-size: larger;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.five-col-right h4::before{
+    content: '😍';
+    font-size: 22px;
+    
+}
+/* section six */
+
+/* footer */
+.footer{
+    width: 100%;
+    background: rgb(15, 5, 65);
+    color: #fff;
+    height: 50vh;
+    padding: 35px 30px 0;
+    
+}
+.footer .row{
+    display: flex;
+    justify-content: center;
+  
+}
+.left-child{
+    flex-basis: 30%;
+
+}
+.left-child h2{
+    font-size: 2.3rem;
+}
+.left-child p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.left-child .fa{
+    font-size: 22px;
+    margin-right: 25px;
+    cursor: pointer;
+    color: rgb(215, 70, 94);
+}
+/*  */
+.right-child{
+    flex-basis: 60%;
+}
+.right-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.right p{
+    margin-bottom: 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
